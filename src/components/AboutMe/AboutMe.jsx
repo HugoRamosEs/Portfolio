@@ -22,7 +22,7 @@ function AboutMe() {
                         {theme === 'dark' ? (
                             <img src='/img/skill-scheme-dark.png' alt='Skill Scheme' />
                         ) : (
-                            <img src='./img/skill-scheme-light.png' alt='Skill Scheme' />
+                            <img src='/img/skill-scheme-light.png' alt='Skill Scheme' />
                         )}
                     </div>
                     <div className={styles.mobileImage}>
