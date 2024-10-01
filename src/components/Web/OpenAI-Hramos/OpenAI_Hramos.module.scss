@@ -1,0 +1,47 @@
+.openai_hramos {
+
+    article {
+        background-color: #202020;
+        color: var(--white-1);
+        padding: 1.5rem;
+        border-radius: 7px;
+        box-shadow: 0.3rem 0.3rem 0 hsl(197 87% 42% / 1);
+        margin-bottom: 2rem;
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 7px;
+            margin-bottom: 1rem;
+            border: 5px solid hsl(197 87% 42% / 1);
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 2%;
+
+            li {
+                margin: 10px 0px;
+                line-height: 1.5;
+            }
+        }
+
+        p a {
+            color: var(--blue-1);
+            border-bottom: 1px solid var(--blue-1);
+            font-weight: bold;
+            padding: 0;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1285px) { 
+    .openai_hramos article {
+        margin-top: 1.5rem;
+    }
+}

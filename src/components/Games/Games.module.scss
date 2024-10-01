@@ -1,0 +1,49 @@
+.games {
+
+    article {
+        background-color: #202020;
+        color: var(--white-1);
+        padding: 1.5rem;
+        border-radius: 7px;
+        box-shadow: 0.3rem 0.3rem 0 hsl(197 87% 42% / 1);
+        margin-bottom: 2rem;
+
+        .game {
+            display: flex;
+            flex-direction: column;
+            background-color: #383838;
+            border: 3px solid #383838;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s ease;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-bottom: 0.3rem solid hsl(197 87% 42% / 1);
+            }
+            
+            .text {
+                padding: 1.25rem;
+
+                a {
+                    background-color: #202020 !important;
+                    margin: 0;
+
+                    &:hover {
+                        background-color: var(--blue-1) !important;
+                        color: var(--white-1) !important;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                border-color: hsl(197 87% 42% / 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.themeSelector {
+    font-size: 30px;
+    font-family: "icomoon";
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+        color: var(--gray-2);
+    }
+
+    &:before {
+        content: "\e9d5";
+    }
+}

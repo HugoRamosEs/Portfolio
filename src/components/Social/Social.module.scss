@@ -1,0 +1,39 @@
+.social {
+    padding-top: 1rem;
+
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 175px;
+            height: auto;
+        }
+
+        span {
+            font-size: 20px;
+            color: var(--gray-2);
+        }
+
+        .socialBtns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .social .socialBtns {
+        gap: 1rem;
+
+        a {
+            width: 150px;
+            
+        }
+    } 
+}

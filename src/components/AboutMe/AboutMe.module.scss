@@ -1,0 +1,271 @@
+$background-article: #202020;
+$background-company: #383838;
+$border-radius: 7px;
+$box-shadow-color: hsl(197 87% 42% / 1);
+$dot-size: 20px;
+$padding: 1.5rem;
+$gap: 1rem;
+$white-color: var(--white-1);
+$blue-color: var(--blue-1);
+
+.aboutMe {
+    article {
+        background-color: $background-article;
+        color: $white-color;
+        padding: $padding;
+        border-radius: $border-radius;
+        box-shadow: 0.3rem 0.3rem 0 $box-shadow-color;
+        margin-bottom: 2rem;
+    }
+
+    .skill {
+        div{
+            text-align: center;
+
+            img {
+                width: 95%;
+                height: auto;
+            }
+        } 
+
+        .desktopImage {
+            display: block;
+        }
+
+        .mobileImage {
+            display: none;
+        }
+    }
+    
+    .certificates .certificate {
+        display: flex;
+        background-color: $background-company;
+        border-radius: 5px;
+        padding: 1rem 1rem 1.5rem 1rem;
+        gap: $gap;
+        align-items: center;
+
+        img {
+            width: 128px;
+            height: 128px;
+        }
+
+        p {
+            padding-bottom: 0.75rem;
+        }
+
+        a {
+            background-color: #202020;
+            margin: 0;
+        }
+    }
+
+    .work .company {
+        display: flex;
+        background-color: $background-company;
+        border-radius: 5px;
+        padding: 1rem;
+        gap: $gap;
+        align-items: center;
+
+        img {
+            width: 128px;
+            height: 128px;
+        }
+    }
+
+    .moreInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        gap: $gap;
+
+        h2 {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+
+        .languages {
+            display: flex;
+            flex-direction: column;
+
+            .languageLevel {
+                display: flex;
+                gap: 10px;
+
+                .dot, .dotFilled {
+                    width: $dot-size;
+                    height: $dot-size;
+                    background-color: #ccc;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+
+                .dotFilled {
+                    background-color: $blue-color;
+                }
+            }
+
+            h4 {
+                margin: 1rem 0 0.5rem 0;
+            }
+        }
+
+        .studies {
+            .study {
+                display: flex;
+                align-items: center;
+                margin: 1rem 0;
+
+                img {
+                    width: 80px;
+                    height: auto;
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                }
+
+                div {
+                    margin-top: 0;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .aboutMe {
+
+        .skill {
+            div img {
+                width: 100%;
+                height: auto;
+            }
+
+            .desktopImage {
+                display: none;
+            }
+
+            .mobileImage {
+                display: block;
+            }
+        } 
+
+        .certificates .certificate {
+            flex-direction: column;
+            gap: 1rem;
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        .work .company {
+            flex-direction: column;
+            gap: 1rem;
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        .moreInfo {
+            grid-template-columns: repeat(2, 1fr);
+    
+            .languages {
+                grid-column: 1 / 3;
+                grid-row: 2;
+    
+                .languageLevel {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+    
+            .studies {
+                grid-column: 1 / 3;
+                grid-row: 3;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .aboutMe {
+
+        .skill {
+            div {
+                text-align: center;
+
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+
+            .desktopImage {
+                display: none;
+            }
+
+            .mobileImage {
+                display: block;
+            }
+        }
+
+        .certificates .certificate {
+            flex-direction: column;
+            gap: 1rem;
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        .work .company {
+            flex-direction: column;
+            gap: 1rem;
+
+            img {
+                width: 40%;
+                height: auto;
+            }
+        }
+
+        .moreInfo {
+            grid-template-columns: repeat(2, 1fr);
+    
+            .languages {
+                grid-column: 1 / 3;
+                grid-row: 2;
+    
+                .languageLevel {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+    
+            .studies {
+                grid-column: 1 / 3;
+                grid-row: 3;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .aboutMe .moreInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .aboutMe .moreInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
