@@ -27,9 +27,9 @@ function AboutMe() {
                     </div>
                     <div className={styles.mobileImage}>
                         {theme === 'dark' ? (
-                            <img src='/img/skill-scheme-mobile-dark.png' alt='Skill Scheme' />
+                            <img src='../../../img/skill-scheme-dark-mobile.png' alt='Skill Scheme' />
                         ) : (
-                            <img src='/img/skill-scheme-mobile-light.png' alt='Skill Scheme' />
+                            <img src='../../../img/skill-scheme-light-mobile.png' alt='Skill Scheme' />
                         )}
                     </div>
                 </article>
