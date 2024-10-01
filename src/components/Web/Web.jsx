@@ -10,7 +10,7 @@ function Web() {
     return (
         <>
             <Social />
-            <section className={`${styles.web} container`}>
+            <section className={`${styles.webs} container`}>
                 <article>
                     <h2>{t('web_a1_title')}</h2>
                     <div className={styles.web}>

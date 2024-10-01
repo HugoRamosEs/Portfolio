@@ -1,10 +1,12 @@
 import styles from './AboutMe.module.scss'
 import Social from '../Social/Social';
-
+import ThemeContext from '../../contexts/ThemeContext';
+import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function AboutMe() {
     const { t } = useTranslation();
+    const { theme } = useContext(ThemeContext);
 
     return (
         <>
@@ -17,10 +19,18 @@ function AboutMe() {
                 <article className={styles.skill}>
                     <h2>{t('aboutMe_a2_title')}</h2>
                     <div className={styles.desktopImage}>
-                        <img src='../../../img/skill-scheme-dark.png' alt='Skill Scheme Dark' />
+                        {theme === 'dark' ? (
+                            <img src='../../../img/skill-scheme-dark.png' alt='Skill Scheme' />
+                        ) : (
+                            <img src='../../../img/skill-scheme-light.png' alt='Skill Scheme' />
+                        )}
                     </div>
                     <div className={styles.mobileImage}>
-                        <img src='../../../img/skill-scheme-dark-mobile.png' alt='Skill Scheme Dark Mobile' />
+                        {theme === 'dark' ? (
+                            <img src='../../../img/skill-scheme-mobile-dark.png' alt='Skill Scheme' />
+                        ) : (
+                            <img src='../../../img/skill-scheme-mobile-light.png' alt='Skill Scheme' />
+                        )}
                     </div>
                 </article>
                 <article className={styles.certificates}>

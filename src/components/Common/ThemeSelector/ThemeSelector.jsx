@@ -1,16 +1,23 @@
 import styles from './ThemeSelector.module.scss';
-import { useState, useEffect } from 'react';
+import ThemeContext from '../../../contexts/ThemeContext';
+import { useContext, useEffect } from 'react';
 
 function ThemeSelector() {
-    const [theme, setTheme] = useState('dark');
+    const { theme, setTheme } = useContext(ThemeContext);
 
     useEffect(() => {
         document.documentElement.classList.toggle('dark', theme === 'dark');
         document.documentElement.classList.toggle('light', theme === 'light');
+
+        localStorage.setItem('theme', theme);
     }, [theme]);
 
     const toggleTheme = () => {
-        setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+        setTheme(prevTheme => {
+            const newTheme = (prevTheme === 'light' ? 'dark' : 'light');
+            console.log('Tema cambiado a:', newTheme);
+            return newTheme;
+        });
     };
 
     return (

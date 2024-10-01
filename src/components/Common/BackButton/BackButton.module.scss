@@ -3,12 +3,16 @@
     top: 75px;
     left: 10px;
     z-index: 998;
-    background-color: #202020;
-    transition: opacity 0.2s ease;
+    background-color: var(--btn-back-background);
+    transition: opacity 0.2s ease, background-color 0.3s ease;
 
     &.hidden {
         opacity: 0;
         pointer-events: none; 
+    }
+
+    &:hover {
+        background-color: var(--btn-back-background-hover);
     }
 }
 

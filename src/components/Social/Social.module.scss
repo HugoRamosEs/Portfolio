@@ -14,7 +14,7 @@
 
         span {
             font-size: 20px;
-            color: var(--gray-2);
+            color: var(--social-article-span-color);
         }
 
         .socialBtns {
@@ -32,8 +32,7 @@
         gap: 1rem;
 
         a {
-            width: 150px;
-            
+            width: 160px;
         }
     } 
 }

@@ -25,10 +25,10 @@ function ARMansion() {
                     </ul>
                     <h2>{t('game_common_h2_2')}</h2>
                     <div className='btns'>
-                        <a className='btn' href='https://github.com/HugoRamosEs/ARMansion-game/releases/tag/1.0' target='_blank'>{t('game_armansion_text_5')}</a>
-                        <a className='btn' href='https://www.youtube.com/watch?v=A4dhWRnEbZc' target='_blank'>{t('game_armansion_text_6')}</a>
-                        <a className='btn' href='https://github.com/HugoRamosEs/ARMansion-game' target='_blank'>{t('game_armansion_text_7')}</a>
-                        <a className='btn' href='../../../../doc/ARMansion_CAT.pdf' target='_blank'>{t('game_armansion_text_8')}</a>
+                        <a className={`${styles.btn_section} btn`}href='https://github.com/HugoRamosEs/ARMansion-game/releases/tag/1.0' target='_blank'>{t('game_armansion_text_5')}</a>
+                        <a className={`${styles.btn_section} btn`} href='https://www.youtube.com/watch?v=A4dhWRnEbZc' target='_blank'>{t('game_armansion_text_6')}</a>
+                        <a className={`${styles.btn_section} btn`} href='https://github.com/HugoRamosEs/ARMansion-game' target='_blank'>{t('game_armansion_text_7')}</a>
+                        <a className={`${styles.btn_section} btn`} href='../../../../doc/ARMansion_CAT.pdf' target='_blank'>{t('game_armansion_text_8')}</a>
                     </div>
                 </article>
             </section>

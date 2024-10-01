@@ -1,11 +1,10 @@
 .openai_hramos {
-
     article {
-        background-color: #202020;
-        color: var(--white-1);
+        background-color: var(--article-background);
+        color: var(--article-color);
         padding: 1.5rem;
         border-radius: 7px;
-        box-shadow: 0.3rem 0.3rem 0 hsl(197 87% 42% / 1);
+        box-shadow: 0.3rem 0.3rem 0 var(--article-boxshadow-color);
         margin-bottom: 2rem;
 
         h1 {
@@ -17,7 +16,7 @@
             width: 100%;
             border-radius: 7px;
             margin-bottom: 1rem;
-            border: 5px solid hsl(197 87% 42% / 1);
+            border: 5px solid var(--img-border-color);
         }
 
         ul {
@@ -31,12 +30,20 @@
         }
 
         p a {
-            color: var(--blue-1);
-            border-bottom: 1px solid var(--blue-1);
+            color: var(--a-border-color);
+            border-bottom: 1px solid var(--a-border-color);
             font-weight: bold;
             padding: 0;
             margin-left: 10px;
         }
+
+        .btn_section {
+            background-color: var(--btn-section-background) !important;
+
+            &:hover {
+                background-color: var(--btn-section-background-hover) !important;
+            }
+        } 
     }
 }
 

@@ -1,31 +1,131 @@
 :root {
     --white-1: #ECECEC;
+    --white-2: #f1f1f1;
+    --white-3: #f7f7f7;
+    --white-4: #d2d2d2;
 
     --gray-1: #D1D1D1;
     --gray-2: #B4B4B4;
     --gray-3: #8F8F8F;
+    --gray-4: #585757;
+    --gray-5: #2C2C2C;
 
     --dark-1: #383838;
     --dark-2: #2F2F2F;
     --dark-3: #212121;
     --dark-4: #202020;
     --dark-5: #171717;
+    
     --dark-rgba-1: rgba(32, 32, 32, 0.95);
     
     --blue-1: #0C9CD5;
     --red-1: red;
+    --orange-1: #FF8D2F;
 
     &.light {
-        --header-background: var(--gray-3);
-        --header-color: var(--dark-4);
+        --header-background: var(--white-1);
+        --header-color: var(--dark-5);
+
+        --footer-background: var(--white-1);
+        --footer-color: var(--dark-5);
+
+        --aboutme-language-dot-background: var(--gray-3);
+        --aboutme-language-dotfilled-background: var(--orange-1);
+
+        --social-article-span-color: var(--gray-4);
+        --social-img-border-color: var(--orange-1);
+
+        --error-h1-color: var(--red-1);
+        --error-h2-color: var(--dark-5);
+
+        --body-background: var(--white-3);
+        --h1-color: var(--dark-4);
+        --h2-border-color: var(--dark-4);
+        --a-color: var(--dark-4);
+        --a-color-hover: var(--gray-3);
+        --a-border-color: var(--orange-1);
+        --article-background: var(--white-2);
+        --article-color: var(--dark-5);
+        --article-boxshadow-color: var(--orange-1);
+        --article-subsection-background: var(--white-4);
+        --article-subsection-a-background: var(--gray-1);
+        --article-subsection-border-color: var(--orange-1);
+        --img-border-color: var(--orange-1);
+        --div-text-a-background: var(--gray-2);
+        --div-text-a-background-hover: var(--orange-1);
+        --div-text-a-color-hover: var(--white-1);
+
+        --date-color: var(--gray-4);
+        --badge-background: var(--gray-2);
+        --btn-background: var(--white-1);
+        --btn-color: var(--dark-5);
+        --btn-background-hover: var(--orange-1);
+        --btn-color-hover: var(--white-1);
+        --btn-span-color: var(--white-1);
+        --btn-section-background: var(--gray-1);
+        --btn-section-background-hover: var(--orange-1);
+        --themeSelector-hover: var(--gray-1);
+        --active-background: var(--gray-1);
+        --dropdown-background: var(--gray-2);
+        --dropdown-border-color: var(--orange-1);
+        --nav-mobile-background: rgba(220, 220, 220, 0.95);
+        --nav-mobile-color: var(--dark-5);
+        --nav-mobile-close-background-color: var(--red-1);
+        --btn-back-background: var(--gray-1);
+        --btn-back-background-hover: var(--orange-1);
     }
 
     &.dark {
         --header-background: var(--dark-4);
         --header-color: var(--white-1);
 
+        --footer-background: var(--dark-4);
+        --footer-color: var(--white-1);
+
+        --aboutme-language-dot-background: var(--gray-2);
+        --aboutme-language-dotfilled-background: var(--blue-1);
+
+        --social-article-span-color: var(--gray-2);
+        --social-img-border-color: var(--blue-1);
+
+        --error-h1-color: var(--red-1);
+        --error-h2-color: var(--white-1);
+
+        --body-background: var(--gray-5);
+        --h1-color: var(--white-1);
+        --h2-border-color: var(--white-1);
+        --a-color: var(--white-1);
+        --a-color-hover: var(--gray-2);
+        --a-border-color: var(--blue-1);
+        --article-background: var(--dark-4);
+        --article-color: var(--white-1);
+        --article-boxshadow-color: var(--blue-1);
+        --article-subsection-background: var(--dark-1);
+        --article-subsection-a-background: var(--dark-4);
+        --article-subsection-border-color: var(--blue-1);
+        --img-border-color: var(--blue-1);
+        --div-text-a-background: var(--dark-4);
+        --div-text-a-background-hover: var(--blue-1);
+        --div-text-a-color-hover: var(--white-1);
+
+        --date-color: var(--gray-3);
+        --badge-background: var(--gray-4);
+        --btn-background: var(--dark-1);
+        --btn-color: var(--white-1);
+        --btn-background-hover: var(--blue-1);
+        --btn-color-hover: var(--white-1);
+        --btn-span-color: var(--white-1);
+        --btn-section-background: var(--dark-1);
+        --btn-section-background-hover: var(--blue-1);
         --themeSelector-hover: var(--gray-2);
         --active-background: var(--dark-1);
+        --dropdown-background: var(--dark-4);
+        --dropdown-border-color: var(--blue-1);
+        --nav-mobile-background: var(--dark-rgba-1);
+        --nav-mobile-color: var(--white-1);
+        --nav-mobile-close-background-color: var(--red-1);
+        --btn-back-background: var(--dark-4);
+        --btn-back-background-hover: var(--blue-1);
     }
 }
 
@@ -52,7 +152,7 @@ body {
 }
 
 body {
-    background-color: #2C2C2C;
+    background-color: var(--body-background);
 }
 
 main {
@@ -81,9 +181,9 @@ main {
         gap: 5px;
         align-items: center;
         padding: 0.25rem;
-        background-color: #585757;
+        background-color: var(--badge-background);
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 0.5rem;
 
         img {
@@ -95,8 +195,8 @@ main {
 }
 
 .btn {
-    background-color: #383838;
-    color: var(--white-1);
+    background-color: var(--btn-background);
+    color: var(--btn-color);
     font-size: 18px;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
@@ -106,29 +206,29 @@ main {
     text-decoration: none;
 
     &:hover {
-        background-color: var(--blue-1);
-        color: var(--white-1);
+        background-color: var(--btn-background-hover);
+        color: var(--btn-color-hover);
     }
 
     span {
         font-family: 'icomoon';
         font-weight: normal;
         vertical-align: text-top;
-        color: var(--white-1);
+        color: var(--btn-span-color);
     }
 }
 
 h1 {
     font-size: 27.5px;
     margin: 1rem 0 0.5rem 0;
-    color: var(--white-1);
+    color: var(--h1-color);
 }
 
 h2 {
     font-size: 26px;
     margin-bottom: 0.75rem;
     padding-bottom: 0.25rem;
-    border-bottom: 2px solid var(--white-1);
+    border-bottom: 2px solid var(--h2-border-color);
 }
 
 h3 {
@@ -158,18 +258,18 @@ a {
     padding: 0.85rem;
     font-size: 16px;
     font-weight: bold;
-    color: var(--white-1);
+    color: var(--a-color);
     text-decoration: none;
     transition: color 0.3s;
     cursor: pointer;
 
     &:hover {
-        color: var(--gray-2);
+        color: var(--a-color-hover);
     }
 }
 
 .date {
-    color: rgb(160, 160, 160);
+    color: var(--date-color);
     margin: 5px 0px;
 }
 

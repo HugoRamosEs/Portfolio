@@ -1,18 +1,17 @@
-.web {
-
+.webs {
     article {
-        background-color: #202020;
-        color: var(--white-1);
+        background-color: var(--article-background);
+        color: var(--article-color);
         padding: 1.5rem;
         border-radius: 7px;
-        box-shadow: 0.3rem 0.3rem 0 hsl(197 87% 42% / 1);
+        box-shadow: 0.3rem 0.3rem 0 var(--article-boxshadow-color);
         margin-bottom: 2rem;
 
         .web {
             display: flex;
             flex-direction: column;
-            background-color: #383838;
-            border: 3px solid #383838;
+            background-color: var(--article-subsection-background);
+            border: 3px solid var(--article-subsection-border-color);
             border-radius: 5px;
             margin-bottom: 1rem;
             transition: border-color 0.3s ease;
@@ -20,29 +19,25 @@
             img {
                 width: 100%;
                 height: auto;
-                border-bottom: 0.3rem solid hsl(197 87% 42% / 1);
+                border-bottom: 0.3rem solid var(--img-border-color);
             }
             
             .text {
                 padding: 1.25rem;
 
                 a {
-                    background-color: #202020 !important;
+                    background-color: var(--div-text-a-background) !important;
                     margin: 0;
 
                     &:hover {
-                        background-color: var(--blue-1) !important;
-                        color: var(--white-1) !important;
+                        background-color: var(--div-text-a-background-hover) !important;
+                        color: var(--div-text-a-color-hover) !important;
                     }
                 }
             }
 
             &:last-child {
                 margin-bottom: 0;
-            }
-
-            &:hover {
-                border-color: hsl(197 87% 42% / 1);
             }
         }
     }

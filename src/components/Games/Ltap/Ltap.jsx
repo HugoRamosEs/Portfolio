@@ -25,8 +25,8 @@ function Ltap() {
                     </ul>
                     <h2>{t('game_common_h2_2')}</h2>
                     <div className='btns'>
-                        <a className='btn' href='https://leavingtheafterparty.vercel.app/' target='_blank'>{t('game_ltap_text_6')}</a>
-                        <a className='btn' href='https://github.com/HugoRamosEs/LeavingTheAfterparty-game' target='_blank'>{t('game_ltap_text_5')}</a>
+                        <a className={`${styles.btn_section} btn`} href='https://leavingtheafterparty.vercel.app/' target='_blank'>{t('game_ltap_text_6')}</a>
+                        <a className={`${styles.btn_section} btn`} href='https://github.com/HugoRamosEs/LeavingTheAfterparty-game' target='_blank'>{t('game_ltap_text_5')}</a>
                     </div>
                 </article>
             </section>
