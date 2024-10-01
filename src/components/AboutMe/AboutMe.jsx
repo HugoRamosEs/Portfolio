@@ -20,16 +20,16 @@ function AboutMe() {
                     <h2>{t('aboutMe_a2_title')}</h2>
                     <div className={styles.desktopImage}>
                         {theme === 'dark' ? (
-                            <img src='../../../img/skill-scheme-dark.png' alt='Skill Scheme' />
+                            <img src='/img/skill-scheme-dark.png' alt='Skill Scheme' />
                         ) : (
-                            <img src='../../../img/skill-scheme-light.png' alt='Skill Scheme' />
+                            <img src='./img/skill-scheme-light.png' alt='Skill Scheme' />
                         )}
                     </div>
                     <div className={styles.mobileImage}>
                         {theme === 'dark' ? (
-                            <img src='../../../img/skill-scheme-mobile-dark.png' alt='Skill Scheme' />
+                            <img src='/img/skill-scheme-mobile-dark.png' alt='Skill Scheme' />
                         ) : (
-                            <img src='../../../img/skill-scheme-mobile-light.png' alt='Skill Scheme' />
+                            <img src='/img/skill-scheme-mobile-light.png' alt='Skill Scheme' />
                         )}
                     </div>
                 </article>
