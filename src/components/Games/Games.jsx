@@ -14,7 +14,7 @@ function Games() {
                 <article>
                     <h2>{t('games_a1_title')}</h2>
                     <div className={styles.game}>
-                        <img src='../../../img/game-ltap.png' alt='Leaving The After Party' />
+                        <img src='../../../img/game-ltap-banner.png' alt='Leaving The After Party' />
                         <div className={styles.text}>
                             <h3>Leaving The After Party</h3>
                             <p className='date'>may. 19 - 2024</p>
