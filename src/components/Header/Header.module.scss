@@ -3,6 +3,7 @@
     top: 0;
     background-color: var(--header-background);
     color: var(--header-color);
+    z-index: 5;
 
     .inner_header {
         display: flex;

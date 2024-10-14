@@ -19,9 +19,9 @@ function Social() {
                 <span>{t('dev')}</span>
                 <div className={styles.socialBtns}>
                     <a href='https://github.com/HugoRamosEs' target='_blank' rel="noopener noreferrer" className='btn'><span>&#xeab0;</span> Github</a>
-                    <a href='https://www.linkedin.com/in/hugo-ramos-montesinos-66ba04259/' target='_blank' rel="noopener noreferrer" className='btn'><span>&#xeac9;</span> LinkedIn</a>
+                    <a href='https://www.linkedin.com/in/hugoramosmontesinos/' target='_blank' rel="noopener noreferrer" className='btn'><span>&#xeac9;</span> LinkedIn</a>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hugoramosmontesinos@gmail.com" target='_blank' rel="noopener noreferrer" className='btn'><span>&#xe945;</span> {t('mail')}</a>
-                    <a href='../../../doc/CV_HugoRamos.pdf' target='_blank' rel="noopener noreferrer" className='btn'><span>&#xe926;</span> CV 2024</a>
+                    <a href='../../../doc/CV_HugoRamos_2024.pdf' target='_blank' rel="noopener noreferrer" className='btn'><span>&#xe926;</span> CV 2024</a>
                 </div>
             </article>
         </section>
