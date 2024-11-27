@@ -36,7 +36,7 @@ function ARMansion() {
                     <div className='btns'>
                         <a className={`${styles.btn_section} btn`} href='https://github.com/HugoRamosEs/ARMansion-game/releases/tag/1.0' target='_blank'>{t('game_armansion_text_5')}</a>
                         <a className={`${styles.btn_section} btn`} href='https://github.com/HugoRamosEs/ARMansion-game' target='_blank'>{t('game_armansion_text_7')}</a>
-                        <a className={`${styles.btn_section} btn`} href='../../../../doc/ARMansion_CAT.pdf' target='_blank'>{t('game_armansion_text_8')}</a>
+                        <a className={`${styles.btn_section} btn`} href='../../../../doc/ARMansion_cat.pdf' target='_blank'>{t('game_armansion_text_8')}</a>
                     </div>
                 </article>
             </section>

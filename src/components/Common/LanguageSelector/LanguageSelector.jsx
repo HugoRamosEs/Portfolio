@@ -8,9 +8,9 @@ function LanguageSelector() {
     const enImg = '../../../img/en.png';
     const esImg = '../../../img/es.png';
     const { t } = useTranslation();
+    const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
     const [isOpen, setIsOpen] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-    const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
